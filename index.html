@@ -24,7 +24,7 @@ function arrayRandElement(arr) {
     var rand = Math.floor(Math.random() * arr.length);
     return arr[rand];};
 for( var i = 0, newimgs = ''; i < 20; ++i ) {
-									newimgs+= '<a href="#"><img src="images/new/' +  getRandomInt(1,309) + '.jpg"/></a>';}
+									newimgs+= '<a href="#"><img src="images/' +  getRandomInt(1,309) + '.jpg"/></a>';}
 document.getElementById("am-container").innerHTML = newimgs;</script>
 
 			</div>
@@ -54,7 +54,7 @@ document.getElementById("am-container").innerHTML = newimgs;</script>
 							});
 							$('#loadmore').show().bind('click', function() {
 								for( var i = 0, newimgs = ''; i < arrayRandElement([3,4,6,9,12,15]); ++i ) {
-									newimgs	+= '<a href="#"><img src="images/new/' +  getRandomInt(1,309) + '.jpg"/></a>';
+									newimgs	+= '<a href="#"><img src="images/' +  getRandomInt(1,309) + '.jpg"/></a>';
 									console.log(newimgs)
 								}
 								var $newimages = $( newimgs );
